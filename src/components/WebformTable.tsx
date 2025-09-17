@@ -24,9 +24,6 @@ type WebformData = {
   totalNumberOfTextareaFields: number
 }
 
-type WebformItem = JsonFile & {
-  data?: WebformData
-}
 
 type SortConfig = {
   key: keyof WebformData | 'filename'
@@ -112,10 +109,6 @@ export default function WebformTable(props: Props) {
     return config.direction === 'asc' ? '↑' : '↓'
   }
 
-  const formatBoolean = (value: boolean | undefined) => {
-    if (value === undefined) return '—'
-    return value ? '✓' : '✗'
-  }
 
   return (
     <div class="table-responsive">

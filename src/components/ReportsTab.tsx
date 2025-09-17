@@ -13,11 +13,6 @@ type WebformData = {
   NumberOfFieldsTotal: number
 }
 
-type ChartData = {
-  name: string
-  commits: number
-  fields: number
-}
 
 type Props = {
   jsonFiles: JsonFile[]

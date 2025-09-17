@@ -62,30 +62,7 @@ function App() {
     updateTheme()
   }
 
-  const getThemeDisplayName = (theme: string) => {
-    switch (theme) {
-      case 'dark': return 'Dark Mode'
-      case 'light': return 'Light Mode'
-      case 'custom': return 'Ocean Mode'
-      case 'midnight': return 'Midnight Mode'
-      case 'sage': return 'Sage Garden'
-      case 'retro': return 'Radical 80s'
-      case 'never': return 'Never Mode'
-      default: return 'Dark Mode'
-    }
-  }
 
-  const getCurrentThemeIcon = () => {
-    switch (currentTheme()) {
-      case 'dark': return '🌙'
-      case 'light': return '☀️'
-      case 'custom': return '🌊'
-      case 'midnight': return '🌌'
-      case 'sage': return '🌿'
-      case 'retro': return '📼'
-      default: return '🌙'
-    }
-  }
 
   // Simple routing logic
   const renderCurrentRoute = () => {
