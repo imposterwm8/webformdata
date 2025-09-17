@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #e2e8f0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(226, 232, 240, 0.04) 0px,
+      rgba(226, 232, 240, 0.04) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.25) 0%, rgba(30, 41, 59, 0.92) 42%, rgba(15, 23, 42, 0.98) 100%),
+    linear-gradient(160deg, rgba(148, 163, 184, 0.1) 0%, rgba(30, 41, 59, 0.95) 55%);
+  background-attachment: fixed;
+  color: inherit;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+a:hover {
+  color: #0ea5e9;
+}
+
+#root {
+  min-height: 100vh;
+}

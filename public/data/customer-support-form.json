@@ -1,0 +1,124 @@
+{
+    "CustomerName": "TechCorp Solutions",
+    "RepoSlug": "customer-support-webform",
+    "RepoUrl": "https://github.com/techcorp/support-forms",
+    "RepoNumberOfCommits": 15,
+    "IssuetrakWebformFrameWorkVersion": 1.0,
+    "NumberOfCards": 3,
+    "NumberOfFieldsTotal": 12,
+    "includesUserData": true,
+    "includesCustomData": true,
+    "includesIssueData": true,
+    "totalNumberOfTextFields": 7,
+    "totalNumberOfNumberFields": 1,
+    "totalNumberOfDateFields": 1,
+    "totalNumberOfCheckboxFields": 2,
+    "totalNumberOfRadioFields": 1,
+    "totalNumberOfDropdownFields": 0,
+    "totalNumberOfFileFields": 0,
+    "totalNumberOfTextareaFields": 1,
+    "Cards": [
+        {
+            "cardHeader": "Contact Information",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Full Name *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Email Address *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Phone Number",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Company",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Support Request",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Issue Priority",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Ticket Number",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Issue Description *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "textarea"
+                },
+                {
+                    "fieldLabel": "Date Reported *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Additional Options",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Department",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Manager Name",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Send Email Updates",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "Critical Issue",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "checkbox"
+                }
+            ]
+        }
+    ]
+}

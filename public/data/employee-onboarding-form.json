@@ -1,0 +1,207 @@
+{
+    "CustomerName": "GlobalTech Industries",
+    "RepoSlug": "hr-onboarding-system",
+    "RepoUrl": "https://github.com/globaltech/hr-forms",
+    "RepoNumberOfCommits": 42,
+    "RepoLastCommitDate": "09/17/2025",
+    "IssuetrakWebformFrameWorkVersion": 1.0,
+    "NumberOfCards": 5,
+    "NumberOfFieldsTotal": 24,
+    "includesUserData": true,
+    "includesCustomData": true,
+    "includesIssueData": true,
+    "totalNumberOfTextFields": 12,
+    "totalNumberOfNumberFields": 2,
+    "totalNumberOfDateFields": 3,
+    "totalNumberOfCheckboxFields": 3,
+    "totalNumberOfRadioFields": 2,
+    "totalNumberOfDropdownFields": 1,
+    "totalNumberOfFileFields": 1,
+    "totalNumberOfTextareaFields": 0,
+    "Cards": [
+        {
+            "cardHeader": "Personal Information",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "First Name *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Last Name *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Date of Birth",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "date"
+                },
+                {
+                    "fieldLabel": "Social Security Number",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Home Address",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Employment Details",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Employee ID",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Department",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "dropdown"
+                },
+                {
+                    "fieldLabel": "Job Title *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Start Date *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                },
+                {
+                    "fieldLabel": "Salary",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "number"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Contact Information",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Work Email *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Personal Email",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Phone Number *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Emergency Contact Name",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Emergency Contact Phone",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Benefits & Preferences",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Employment Type",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Shift Preference",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Health Insurance",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "401k Enrollment",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Documentation",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Resume Upload",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "file"
+                },
+                {
+                    "fieldLabel": "Background Check Complete",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "Orientation Date",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "CustomerName": "AcmeDemo",
+    "RepoSlug": "its-webforms",
+    "RepoUrl": "https://example.com",
+    "RepoNumberOfCommits": 8,
+    "IssuetrakWebformFrameWorkVersion": 1.0,
+    "NumberOfCards": 2,
+    "NumberOfFieldsTotal": 10,
+    "includesUserData": true,
+    "includesCustomData": true,
+    "includesIssueData": true,
+    "totalNumberOfTextFields": 6,
+    "totalNumberOfNumberFields": 1,
+    "totalNumberOfDateFields": 1,
+    "totalNumberOfCheckboxFields": 0,
+    "totalNumberOfRadioFields": 0,
+    "totalNumberOfDropdownFields": 0,
+    "totalNumberOfFileFields": 1,
+    "totalNumberOfTextareaFields": 1,
+    "Cards": [
+        {
+            "cardHeader": "Incident Form",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "First Name *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Last Name *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Description *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "textarea"
+                },
+                {
+                    "fieldLabel": "Date of Incident *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                },
+                {
+                    "fieldLabel": "Employee Code *",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Employee Number",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "number"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Incident Details",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Supervisor Name",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Department",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Location",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Evidence Upload",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "file"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,308 @@
+{
+    "CustomerName": "DataInsights Research",
+    "RepoSlug": "customer-satisfaction-survey",
+    "RepoUrl": "https://github.com/datainsights/survey-platform",
+    "RepoNumberOfCommits": 67,
+    "IssuetrakWebformFrameWorkVersion": 1.0,
+    "NumberOfCards": 8,
+    "NumberOfFieldsTotal": 38,
+    "includesUserData": true,
+    "includesCustomData": true,
+    "includesIssueData": true,
+    "totalNumberOfTextFields": 8,
+    "totalNumberOfNumberFields": 6,
+    "totalNumberOfDateFields": 2,
+    "totalNumberOfCheckboxFields": 8,
+    "totalNumberOfRadioFields": 6,
+    "totalNumberOfDropdownFields": 4,
+    "totalNumberOfFileFields": 2,
+    "totalNumberOfTextareaFields": 2,
+    "Cards": [
+        {
+            "cardHeader": "Participant Information",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Full Name",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Email Address *",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Age Group",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "dropdown"
+                },
+                {
+                    "fieldLabel": "Gender",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "radio"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Service Experience",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Overall Satisfaction",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Service Quality Rating",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Would Recommend",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Service Date",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                },
+                {
+                    "fieldLabel": "Response Time Rating",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Product Feedback",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Product Category",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "dropdown"
+                },
+                {
+                    "fieldLabel": "Ease of Use",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Value for Money",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Feature Improvements",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "textarea"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Communication Preferences",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Preferred Contact Method",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Newsletter Subscription",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "Marketing Emails",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "SMS Updates",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Technical Information",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Browser Used",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "dropdown"
+                },
+                {
+                    "fieldLabel": "Device Type",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Operating System",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "dropdown"
+                },
+                {
+                    "fieldLabel": "Screen Resolution",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Usage Patterns",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Frequency of Use",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "radio"
+                },
+                {
+                    "fieldLabel": "Session Duration (minutes)",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Peak Usage Time",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "text"
+                },
+                {
+                    "fieldLabel": "Mobile App Usage",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                }
+            ]
+        },
+        {
+            "cardHeader": "Support & Documentation",
+            "numberOfColumns": 1,
+            "Fields": [
+                {
+                    "fieldLabel": "Support Ticket Number",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Documentation Quality",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "number"
+                },
+                {
+                    "fieldLabel": "Training Completed",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "Additional Comments",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "textarea"
+                }
+            ]
+        },
+        {
+            "cardHeader": "File Uploads & Final Details",
+            "numberOfColumns": 2,
+            "Fields": [
+                {
+                    "fieldLabel": "Screenshot Upload",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "file"
+                },
+                {
+                    "fieldLabel": "Document Upload",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "file"
+                },
+                {
+                    "fieldLabel": "Survey Completion Date",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": true,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "date"
+                },
+                {
+                    "fieldLabel": "Follow-up Required",
+                    "fieldUpdatesUser": false,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": true,
+                    "dataType": "checkbox"
+                },
+                {
+                    "fieldLabel": "Privacy Agreement",
+                    "fieldUpdatesUser": true,
+                    "fieldUpdatesCustomData": false,
+                    "fieldUpdatesIssue": false,
+                    "dataType": "checkbox"
+                }
+            ]
+        }
+    ]
+}
