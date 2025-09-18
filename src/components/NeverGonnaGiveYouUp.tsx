@@ -47,8 +47,8 @@ export default function NeverGonnaGiveYouUp() {
         </div>
 
         <div class="retro-message">
-          <p>Hope your workmates enjoyed this! 😄</p>
-          <p class="retro-small">Classic move from the dashboard team</p>
+          <p></p>
+          <p class="retro-small"></p>
         </div>
       </div>
 
