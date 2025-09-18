@@ -881,7 +881,7 @@
 
         async function loadWebformData(filename) {
             try {
-                const response = await fetch(`/data/${filename}`);
+                const response = await fetch(`/webformdata/data/${filename}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch webform data');
                 }
