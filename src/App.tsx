@@ -164,7 +164,6 @@ function App() {
                         <span class="theme-name">Sage Garden</span>
                       </span>
                     </Dropdown.Item>
-                    <Dropdown.Divider />
                     <Dropdown.Item
                       onClick={() => selectTheme('retro')}
                       class={currentTheme() === 'retro' ? 'active' : ''}
