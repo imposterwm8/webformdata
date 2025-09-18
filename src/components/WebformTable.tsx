@@ -208,7 +208,7 @@ export default function WebformTable(props: Props) {
                       variant="outline-secondary"
                       size="sm"
                       as="a"
-                      href={`/webform-details.html?file=${encodeURIComponent(item.filename)}`}
+                      href={`/webformdata/webform-details.html?file=${encodeURIComponent(item.filename)}`}
                       target="_blank"
                       rel="noopener"
                       class="text-decoration-none"
