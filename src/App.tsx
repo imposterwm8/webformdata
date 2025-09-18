@@ -171,7 +171,7 @@ function App() {
                     >
                       <span class="theme-option">
                         <span class="theme-emoji">📼</span>
-                        <span class="theme-name retro-text">Radical 80s</span>
+                        <span class="theme-name retro-text">Radical Eighties</span>
                       </span>
                     </Dropdown.Item>
                     <Dropdown.Item
