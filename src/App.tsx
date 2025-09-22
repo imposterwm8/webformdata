@@ -14,7 +14,7 @@ import {
 import './App.css'
 import WebformTable from './components/WebformTable'
 import ReportsTab from './components/ReportsTab'
-import NeverGonnaGiveYouUp from './components/NeverGonnaGiveYouUp'
+// Removed Never Mode feature
 
 type JsonFile = {
   filename: string
@@ -36,8 +36,8 @@ const jsonFiles: JsonFile[] = Object.keys(jsonModules)
 
 function App() {
   const [activeTab, setActiveTab] = createSignal('overview')
-  const [currentTheme, setCurrentTheme] = createSignal('custom') // 'dark', 'light', 'custom', 'midnight', 'sage', 'retro'
-  const [currentRoute, setCurrentRoute] = createSignal('main')
+  const [currentTheme, setCurrentTheme] = createSignal('custom') // 'light', 'custom', 'midnight', 'sage', 'retro'
+  // Single-route app (Never Mode removed)
 
   // Apply theme class to document body
   onMount(() => {
@@ -47,17 +47,13 @@ function App() {
   const updateTheme = () => {
     const body = document.body
     // Remove all theme classes
-    body.classList.remove('dark-mode', 'light-mode', 'custom-mode', 'midnight-mode', 'sage-mode', 'retro-mode')
+    body.classList.remove('light-mode', 'custom-mode', 'midnight-mode', 'sage-mode', 'retro-mode')
 
     // Add current theme class
     body.classList.add(`${currentTheme()}-mode`)
   }
 
   const selectTheme = (theme: string) => {
-    if (theme === 'never') {
-      setCurrentRoute('rickroll')
-      return
-    }
     setCurrentTheme(theme)
     updateTheme()
   }
@@ -65,15 +61,7 @@ function App() {
 
 
   // Simple routing logic
-  const renderCurrentRoute = () => {
-    switch (currentRoute()) {
-      case 'rickroll':
-        return <NeverGonnaGiveYouUp />
-      case 'main':
-      default:
-        return renderMainApp()
-    }
-  }
+  const renderCurrentRoute = () => renderMainApp()
 
   const renderMainApp = () => (
     <>
@@ -120,15 +108,6 @@ function App() {
                   <Dropdown.Menu class="theme-dropdown-menu">
                     <Dropdown.Header>Select Theme</Dropdown.Header>
                     <Dropdown.Item
-                      onClick={() => selectTheme('dark')}
-                      class={currentTheme() === 'dark' ? 'active' : ''}
-                    >
-                      <span class="theme-option">
-                        <span class="theme-emoji">🌙</span>
-                        <span class="theme-name">Dark Mode</span>
-                      </span>
-                    </Dropdown.Item>
-                    <Dropdown.Item
                       onClick={() => selectTheme('light')}
                       class={currentTheme() === 'light' ? 'active' : ''}
                     >
@@ -164,24 +143,7 @@ function App() {
                         <span class="theme-name">Sage Garden</span>
                       </span>
                     </Dropdown.Item>
-                    <Dropdown.Item
-                      onClick={() => selectTheme('retro')}
-                      class={currentTheme() === 'retro' ? 'active' : ''}
-                    >
-                      <span class="theme-option">
-                        <span class="theme-emoji">📼</span>
-                        <span class="theme-name retro-text">Radical Eighties</span>
-                      </span>
-                    </Dropdown.Item>
-                    <Dropdown.Item
-                      onClick={() => selectTheme('never')}
-                      class="never-mode-item"
-                    >
-                      <span class="theme-option">
-                        <span class="theme-emoji">🎤</span>
-                        <span class="theme-name">Never Mode</span>
-                      </span>
-                    </Dropdown.Item>
+                    
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav.Item>

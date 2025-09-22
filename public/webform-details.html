@@ -720,12 +720,6 @@
                         </button>
                         <ul class="dropdown-menu theme-dropdown-menu">
                             <li><h6 class="dropdown-header">Select Theme</h6></li>
-                            <li><a class="dropdown-item" href="#" onclick="selectTheme('dark'); return false;">
-                                <span class="theme-option">
-                                    <span class="theme-emoji">🌙</span>
-                                    <span class="theme-name">Dark Mode</span>
-                                </span>
-                            </a></li>
                             <li><a class="dropdown-item" href="#" onclick="selectTheme('light'); return false;">
                                 <span class="theme-option">
                                     <span class="theme-emoji">☀️</span>
@@ -822,24 +816,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Five-state theme system
-        let currentTheme = 'custom'; // 'dark', 'light', 'custom', 'midnight', 'sage'
+        // Theme system (Dark Mode removed)
+        let currentTheme = 'custom'; // 'light', 'custom', 'midnight', 'sage'
 
         function updateTheme() {
             const body = document.body;
             const themeIcon = document.getElementById('theme-icon');
 
             // Remove all theme classes
-            body.classList.remove('dark-mode', 'light-mode', 'custom-mode', 'midnight-mode', 'sage-mode');
+            body.classList.remove('light-mode', 'custom-mode', 'midnight-mode', 'sage-mode');
 
             // Add current theme class
             body.classList.add(`${currentTheme}-mode`);
 
             // Update icon (no longer used, but keeping for compatibility)
             switch (currentTheme) {
-                case 'dark':
-                    themeIcon.innerHTML = '🌙';
-                    break;
                 case 'light':
                     themeIcon.innerHTML = '☀️';
                     break;
