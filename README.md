@@ -1,17 +1,17 @@
-  # Repository Guidelines
+  
+  # Issuetrak Webforms compendium PRD
 
-  ## Project Structure & Module Organization
-  The Solid entry point is `src/index.tsx`, which renders `App.tsx` into `index.html`. Group new features inside `src/
-  ` using domain folders (for example, `src/forms/`) and collocate their components, hooks, and styles. Shared static
-  assets that should be processed by Vite belong in `src/assets/`; files placed in `public/` (favicons, manifest) are
-  copied verbatim at build time. Adjust document-level metadata through `index.html`, and update `vite.config.ts` or
-  the `tsconfig.*` files only when build behavior must change.
+  # Objective
+  Provide detailed information about our deployed webforms. Also maybe improve our ability to support and create webforms and more. 
 
- ## dont start dev servers
+  # Features
+  * Give stats about all webforms projects, including field data and column data and whatever is requested (with Gitlab API and Gitlab MCP server assistance)
+  * Research being able to edit webforms directly via UI, and more.
 
-  ## Coding Style & Naming Conventions
-  TypeScript compilation runs in strict mode; address type errors directly instead of resorting to `any`. Stick to 2-
-  space indentation and single quotes in TSX as seen in `src/App.tsx`. Solid components and providers use `PascalCase`
-  (`FormWizard.tsx`), signals/helpers use `camelCase`, and CSS class names remain kebab-cased (`.read-the-docs`).
-  Import local assets relatively (e.g., `import icon from './assets/icon.svg'`) and favor small, focused components
-  over nested JSX blocks.
+  ## WIP
+  # Webforms layouts
+  
+  # Cards
+  # Fields
+  # Summary 
+  # Submission Results
